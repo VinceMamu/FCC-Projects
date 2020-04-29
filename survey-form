@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{
+  background: white;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  font-size: 1.3rem;
+  line-height: 30px;
+  font-weight: 400;
+}
+#bgimg{
+  display: flex;
+  position: fixed;
+  opacity: 80%;
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+#formgrid{
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  left: 60%;
+  background-color: white;
+  padding: 20px 20px 20px 20px;
+  width: 40%;
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px black;
+  margin: 1%;
+  left: 29%;
+  font-family: sans-serif;
+  justify-contet: left;
+}
+
+#titlepart{
+  text-align: center;
+}
+
+.input-text{
+  width: 80%;
+}
+
+.textbox{
+  width: 95%;
+  padding: 2%;
+  font-size: 15px;
+  border: 0;
+  border-bottom: 1px dotted grey;
+  text-align: left;
+  font-size: 14px;
+}
+
+#submit{
+  width: 100%;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border-style: none;
+  border-radius: 50px;
+}
+
+</style>
+
+<body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div id="bgimg"><img src="https://images.wallpaperscraft.com/image/blur_bokeh_lights_140566_1920x1080.jpg"alt=""></div>
+  
+  <div id="formgrid">
+    <div id="titlepart">
+    <h1 id="title">FCC Survey Form</h1>
+    
+    <p id="description">Tell us what you think!</p>
+    </div>
+    <form id="survey-form">
+      <div>
+        <label for="name" id="name-label">Name</label></div>
+      <div>
+        <input class="textbox" id="name" name="name" type="text" placeholder="Type in your name." required>
+      </div><br>
+      
+      <div><label for="email" id="email-label">E-mail</label></div>
+        <div><input id="email" class="textbox" name="email" type="email" placeholder="Type in your e-mail." required></div><br>
+      
+      <div><label for="number" id="number-label">Age</label></div>
+        <div><input id="number" class="textbox" name="number" type="number" placeholder="Type in your age." min="10" max="80" required></div><br>
+      
+      <div><label for="dropdown" id="dropdown-label">Expertise</label></div>
+      <div><select id="dropdown" class="textbox" name="dropdown" type="dropdown" placeholder="" required></div><
+          <option value="beginner">Beginner</option>
+          <option value="enthusiast">Enthusiast</option>
+        <option value="pro">Professional</option></select><br>
+    
+       <br><div><label for="experience" id="experience-label1">How's your experience?</label><br>
+        <input class="radbut" id="experience" name="experience" type="radio" value="good" required>Good<br>
+        <input id="experience" class="radbut" name="experience" type="radio" value="satisfactory" required>Satisfactory<br>
+        <input id="experience" class="radbut" name="experience" type="radio" value="bad" required>Bad</div><br>
+       
+    <div><label for="checkbox" id="check-label">What more would you want to learn about using FCC?</label><br>
+        <input name="checkbox" id="checkbox" type="checkbox" value="frontend">Front-end Design<br>
+      <input name="checkbox" id="checkbox" type="checkbox" value="backend">Back-end Management<br>
+      <input name="checkbox" id="checkbox" type="checkbox" value="framework">Frameworks<br>
+    </div>
+    
+    <br><div><label for="comments" id="comment-label">Other comments or suggestions.</label><br>
+      <textarea class="textbox" id="comments" name="comments" placeholder="Enter your comment here."></textarea>
+    </div>
+    
+    <br><div><button type="submit" id="submit">Submit your survey.</button></div>
+    </form>
+ </div>
+ 
+</body>
+</html>
