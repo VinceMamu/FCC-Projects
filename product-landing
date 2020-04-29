@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<style>
+@import "https://fonts.googleapis.com/css?family=Fauna+One:400,700";
+
+body{
+  background-color: white;
+  box-sizing: border-box;
+  font-family: 'Fauna One', serif;
+  color: orangered;
+  margin: 0;
+}
+li{
+  list-style: none;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+#page-wrapper{
+  position: relative;
+}
+.container{
+  max-width: 1000px;
+  width: 100%;
+}
+.btn{
+  text-align: center;
+  font-size: 20px;
+  background: liner-gradient(35deg, #FFF, white);
+  color: black;
+  border-style: none;
+}
+.grid{
+  display: flex;
+  
+}
+header{
+  position: fixed;
+  align-items: center;
+  justify-content: space-around;
+  top: 0;
+  background-color: orange;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: 0;
+  left: 0;
+  box-shadow: 0 5px 10px grey;
+}
+#header-img{
+  max-width: 5em;
+  position: relative;
+}
+
+nav{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 0 50px;
+  width: 100%;
+  flex-direction: column;
+  position: absolute;
+  left: 60%;
+  font-size: 1.3em;
+  top: -4%;
+}
+
+nav > ul{
+  display: flex;
+  flex-direction: row;
+}
+
+nav > ul > li{
+  margin: 10px;
+}
+
+#tagline{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 4em;
+}
+
+#tagline input[type="email"]{
+  padding: 5px;
+  width: 20em;
+  height: 2em;
+}
+
+#tagline input[type="submit"]{
+  border-style: none;
+  margin: 1em;
+  background-color: black;
+  color: orange;
+  font-family: 'Fauna One', serif;
+  padding: 10px;
+  }
+
+#container{
+  display: grid;
+  margin-top: 3em;
+  grid-template-areas:
+    'icon h2 p'
+    'icon h2 p'
+    'icon h2 p';
+}
+
+#features{
+  margin-top: 3em;
+  margin-bottom: 3em;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+
+#features .icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: icon;
+}
+
+#features .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+}
+
+.grid >h2{
+  display: flex;
+  justify-content: center;
+  align-text: center;
+  flex-direction: column;
+  grid-area: h2;
+}
+
+.grid p{
+  grid-area: p;
+  color: black;
+}
+
+#how-it-works{
+  display: flex;
+  justify-content: center;
+  background: repeating-linear-gradient(275deg, orange 0px, orange 10px, white 10px, white 20px);
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 10px;
+  border: 5px double black;
+}
+#pricing{
+  display: flex;
+  flex-drection: row;
+}
+@media (max-width: 800px){
+  pricing{
+  flex-direction: column;
+   
+}
+}
+
+.product .level{
+  margin-top: 1em;
+  font-size: 3em;
+}
+
+.product > h2{
+  color: green;
+}
+
+.product > ol{
+  color: black;
+}
+
+.product .btn{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: black;
+  color: gold;
+  font-size: 1em;
+  width: 60%;
+  border: 2px dashed gold;
+}
+
+@media (max-width: 800px){
+  #pricing{
+    display: flex;
+    flex-direction: column;
+  }
+  .product{
+    margin: 0 auto;
+    max-width: 300px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+footer{
+  background-color: orange;
+  height: 100%;
+}
+
+footer > ul{
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+}
+
+footer > ul > li{
+  padding: 0 10px;
+  color: white;
+}
+</style>
+<body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  < id="page-wrapper">
+    <header id="header">
+    <div class="logo">
+    <img id="header-img" src="https://img.pngio.com/chair-png-images-transparent-free-download-pngmartcom-chairs-png-850_922.png" alt="Chairs Co. Logo"> </div>
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#features">Our Products</a></li>
+        <li><a class="nav-link" href="#how-it-works">Our Customers</a></li>
+        <li><a class="nav-link" href="#pricing">Our Prices</a></li>
+      </ul>
+    </nav>
+    </header>
+    <div class="container"></div>
+    
+    <section id="tagline">
+      <div class="container"
+      <h2 id="taglinetag">Sit on me.</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input id="email" type="email" placeholder="Your email, please." name="email" required>
+          <input type="submit" id="submit" name="submit" value="Sit like no other." class="button">
+      </form>
+    </section>
+    
+  <div class="container">
+    <section id="features">
+      <div class="grid">
+        <div class="icon"><img src="https://img.icons8.com/pastel-glyph/64/000000/-chair.png" alt=""></div><div class="desc">
+        <h2>Our Products</h2>
+        <p>Chairs made from the finest materials. Suits your style. Quenches your relaxation. Rejuvinates posture.</p></div></div>
+    
+
+      <div class="grid">
+        <div class="icon"><img src="https://img.icons8.com/pastel-glyph/64/000000/hand-truck--v1.png" alt=""></div>
+        <div class="desc">
+        <h2>Our Shipping</h2>
+          <p>Receive your chairs, stored with care, within three (3) days. Fees apply.</p></div></div>
+      
+      <div class="grid">
+        <div class="icon"><img src="https://img.icons8.com/pastel-glyph/64/000000/dollar-coin.png" alt=""></div><div class="desc">
+        <h2>Our Pricing</h2>
+        <p>Ensured quality with every penny spent.</p></div></div></div>
+    
+    </section>
+      <section id="how-it-works">
+        <iframe id="video" height="315" src="https://www.youtube.com/embed/AGG9E_VGacg" frameborder="0" allowfullscreen></iframe></section>
+    <br>
+    <section id="pricing">
+      
+      <div class="product" id="wood">
+        <div class="level">Wood chairs.</div>
+        <h2>500,000.00 USD</h2>
+        <ol>
+          <li>Oh Yeah Yeah</li>
+          <li>Oh Yeah Yeah</li>
+          <li>Oh Yeah Yeah</li>
+        </ol>
+        <button class="btn">This one.</button>
+      </div>
+      
+      <div class="product" id="metal">
+        <div class="level">Metal chairs.</div>
+        <h2>500,001.00 USD</h2>
+        <ol>
+          <li>Oh Yeah Yeah</li>
+          <li>Oh Yeah Yeah</li>
+          <li>Oh Yeah Yeah</li>
+        </ol>
+        <button class="btn">This one.</button>
+      </div>
+      
+      <div class="product" id="cushioned">
+        <div class="level">Cushioned chairs.</div>
+        <h2>5.00 USD</h2>
+        <ol>
+          <li>Oh Yeah Yeah</li>
+          <li>Oh Yeah Yeah</li>
+          <li>Oh Yeah Yeah</li>
+        </ol>
+        <button class="btn">This one.</button>
+      </div>
+    </section>
+    
+    
+    <footer id="footer">
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </footer>
+  </div>
+        
+      </div></body>
+</html>
